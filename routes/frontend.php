@@ -29,7 +29,7 @@ Route::name('frontend.')->group(
 
         Route::get('/upload', [S3Controller::class, 'index'])->name('upload.form');
         Route::post('/upload', [S3Controller::class, 'upload'])->name('upload');
-        // Route::delete('/delete/{file}', [S3Controller::class, 'destroy'])->name('frontend.delete');
-        // Route::post('/edit/{file}', [S3Controller::class, 'update'])->name('frontend.update');
+        Route::delete('/upload/delete/{file}', [S3Controller::class, 'destroy'])->name('delete');
+        Route::post('/edit/{file}', [S3Controller::class, 'update'])->name('update');
     }
 );
