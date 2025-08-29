@@ -85,18 +85,13 @@
                             <div class="contact-us-circle">
                                 <a href="contact.html"><img src="{{("frontend/images/contact-us-circle.svg")}}" alt=""></a>
                             </div>
-                            <!-- Contact Circle End -->
-                            <!-- About Image Start -->
                             <div class="about-image">
                                 <figure class="image-anime">
                                     <img src="{{("frontend/images/about-us-image-2.jpg")}}" alt="">
                                 </figure>
                             </div>
-                            <!-- About Image End -->
                         </div>
-                        <!-- About Image Box 3 End -->
                     </div>
-                    <!-- About Us Images End -->
                 </div>
                 <div class="col-lg-6">
                     <!-- About us Content Start -->
@@ -108,7 +103,6 @@
                             <p class="wow fadeInUp" data-wow-delay="0.2s">Ocean's Delight began as a small seaside eatery and has grown into a destination for seafood lovers near and far. What hasn't changed is our devotion to honest food.</p>
                         </div>
                         <!-- Section Title End -->
-
                         <!-- About Body List Start -->
                         <div class="about-body-list wow fadeInUp" data-wow-delay="0.4s">
                             <ul>
@@ -117,7 +111,6 @@
                             </ul>
                         </div>
                         <!-- About Body List End -->
-                         
                         <!-- About Counter List Start -->
                         <div class="about-counter-list">
                             <!-- About Counter Item Start -->
@@ -126,7 +119,6 @@
                                 <p>Years of Experience</p>
                             </div>
                             <!-- About Counter Item End -->
-                            
                             <!-- About Counter Item Start -->
                             <div class="about-counter-item">
                                 <h2><span class="counter">10</span>K+</h2>
@@ -181,7 +173,7 @@
                             </div>
                             <div class="history-item-image">
                                 <figure>
-                                    <img src="images/history-image-1.jpg" alt="">
+                                    <img src="{{('frontend/images/history-image-1.jpg')}}" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -195,7 +187,7 @@
                             </div>
                             <div class="history-item-image">
                                 <figure>
-                                    <img src="images/history-image-2.jpg" alt="">
+                                    <img src="{{('frontend/images/history-image-2.jpg')}}" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -209,7 +201,7 @@
                             </div>
                             <div class="history-item-image">
                                 <figure>
-                                    <img src="images/history-image-3.jpg" alt="">
+                                    <img src="{{('images/history-image-3.jpg')}}" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -249,12 +241,12 @@
                         <div class="why-choose-item">
                             <div class="why-choose-item-content">
                                 <h3>Fresh Ingredients</h3>
-                                <img src="images/why-choose-img-1.png" alt="">
+                                <img src="{{('frontend/images/why-choose-img-1.png')}}" alt="">
                                 <h2><span class="counter">100</span>%</h2>
                             </div>
                             
                             <div class="why-choose-item-bg-image">
-                                <img src="images/why-choose-item-1.jpg" alt="">
+                                <img src="{{("frontend/images/why-choose-item-1.jpg")}}" alt="">
                             </div>
                         </div>
                         <!-- Why Choose Item End -->
@@ -263,12 +255,12 @@
                         <div class="why-choose-item active">
                             <div class="why-choose-item-content">
                                 <h3>Signature Dishes</h3>
-                                <img src="images/why-choose-img-2.png" alt="">
+                                <img src="{{('frontend/images/why-choose-img-2.png')}}" alt="">
                                 <h2><span class="counter">50</span>+</h2>
                             </div>
                             
                             <div class="why-choose-item-bg-image">
-                                <img src="images/why-choose-item-2.jpg" alt="">
+                                <img src="{{('frontend/images/why-choose-item-2.jpg')}}" alt="">
                             </div>                            
                         </div>
                         <!-- Why Choose Item End -->
@@ -277,12 +269,12 @@
                         <div class="why-choose-item">
                             <div class="why-choose-item-content">
                                 <h3>Customer Rating</h3>
-                                <img src="images/why-choose-img-3.png" alt="">
+                                <img src="{{("frontend/images/why-choose-img-3.png")}}" alt="">
                                 <h2><span class="counter">4.9</span></h2>
                             </div>
                             
                             <div class="why-choose-item-bg-image">
-                                <img src="images/why-choose-item-3.jpg" alt="">
+                                <img src="{{('frontend/images/why-choose-item-3.jpg')}}" alt="">
                             </div>                            
                         </div>
                         <!-- Why Choose Item End -->
@@ -291,12 +283,12 @@
                         <div class="why-choose-item">
                             <div class="why-choose-item-content">
                                 <h3>Years of Excellence</h3>
-                                <img src="images/why-choose-img-4.png" alt="">
+                                <img src="{{("frontend/images/why-choose-img-4.png")}}" alt="">
                                 <h2><span class="counter">25</span>+</h2>
                             </div>
                             
                             <div class="why-choose-item-bg-image">
-                                <img src="images/why-choose-item-4.jpg" alt="">
+                                <img src="{{("frontend/images/why-choose-item-4.jpg")}}" alt="">
                             </div>                             
                         </div>
                         <!-- Why Choose Item End -->
@@ -364,7 +356,7 @@
                                             <!-- Our Menu Image Start -->
                                             <div class="our-menu-image">
                                                 <figure>
-                                                    <img src="images/our-menu-image-1.png" alt="">
+                                                    <img src="{{("frontend/images/our-menu-image-1.png")}}" alt="">
                                                 </figure>
                                             </div>
                                             <!-- Our Menu Image End -->
@@ -393,7 +385,7 @@
                                             <!-- Our Menu Image Start -->
                                             <div class="our-menu-image">
                                                 <figure>
-                                                    <img src="images/our-menu-image-2.png" alt="">
+                                                    <img src="{{('frontend/images/our-menu-image-2.png')}}" alt="">
                                                 </figure>
                                             </div>
                                             <!-- Our Menu Image End -->
@@ -422,7 +414,7 @@
                                             <!-- Our Menu Image Start -->
                                             <div class="our-menu-image">
                                                 <figure>
-                                                    <img src="images/our-menu-image-3.png" alt="">
+                                                    <img src="{{('frontend/images/our-menu-image-3.png')}}" alt="">
                                                 </figure>
                                             </div>
                                             <!-- Our Menu Image End -->
@@ -451,7 +443,7 @@
                                             <!-- Our Menu Image Start -->
                                             <div class="our-menu-image">
                                                 <figure>
-                                                    <img src="images/our-menu-image-4.png" alt="">
+                                                    <img src="{{("frontend/images/our-menu-image-4.png")}}" alt="">
                                                 </figure>
                                             </div>
                                             <!-- Our Menu Image End -->
@@ -480,7 +472,7 @@
                                             <!-- Our Menu Image Start -->
                                             <div class="our-menu-image">
                                                 <figure>
-                                                    <img src="images/our-menu-image-5.png" alt="">
+                                                    <img src="{{("frontend/images/our-menu-image-5.png")}}" alt="">
                                                 </figure>
                                             </div>
                                             <!-- Our Menu Image End -->
@@ -509,7 +501,7 @@
                                             <!-- Our Menu Image Start -->
                                             <div class="our-menu-image">
                                                 <figure>
-                                                    <img src="images/our-menu-image-6.png" alt="">
+                                                    <img src="{{("frontend/images/our-menu-image-6.png")}}" alt="">
                                                 </figure>
                                             </div>
                                             <!-- Our Menu Image End -->
@@ -550,7 +542,7 @@
                                                 <!-- Our Menu Image Start -->
                                                 <div class="our-menu-image">
                                                     <figure>
-                                                        <img src="images/our-menu-image-1.png" alt="">
+                                                        <img src="{{('frontend/images/our-menu-image-1.png')}}" alt="">
                                                     </figure>
                                                 </div>
                                                 <!-- Our Menu Image End -->
@@ -580,7 +572,7 @@
                                                 <!-- Our Menu Image Start -->
                                                 <div class="our-menu-image">
                                                     <figure>
-                                                        <img src="images/our-menu-image-2.png" alt="">
+                                                        <img src="{{("frontend/images/our-menu-image-2.png")}}" alt="">
                                                     </figure>
                                                 </div>
                                                 <!-- Our Menu Image End -->
@@ -1292,7 +1284,7 @@
                         <!-- CTA Counter Item Start -->
                         <div class="cta-counter-item">
                             <div class="icon-box">
-                                <img src="images/icon-cta-counter-1.svg" alt="">
+                                <img src="{{asset('frontend/images/icon-cta-counter-1.svg')}}" alt="">
                             </div>
                             <div class="cta-counter-content">
                                 <h2><span class="counter">85</span>+</h2>
@@ -1304,7 +1296,7 @@
                         <!-- CTA Counter Item Start -->
                         <div class="cta-counter-item">
                             <div class="icon-box">
-                                <img src="images/icon-cta-counter-2.svg" alt="">
+                                <img src="{{asset('frontend/images/icon-cta-counter-2.svg')}}" alt="">
                             </div>
                             <div class="cta-counter-content">
                                 <h2><span class="counter">4.9</span>+</h2>
@@ -1316,7 +1308,7 @@
                         <!-- CTA Counter Item Start -->
                         <div class="cta-counter-item">
                             <div class="icon-box">
-                                <img src="images/icon-cta-counter-3.svg" alt="">
+                                <img src="{{asset("frontend/images/icon-cta-counter-3.svg")}}" alt="">
                             </div>
                             <div class="cta-counter-content">
                                 <h2><span class="counter">35</span>k+</h2>
@@ -1328,7 +1320,7 @@
                         <!-- CTA Counter Item Start -->
                         <div class="cta-counter-item">
                             <div class="icon-box">
-                                <img src="images/icon-cta-counter-4.svg" alt="">
+                                <img src="{{asset("frontend/images/icon-cta-counter-4.svg")}}" alt="">
                             </div>
                             <div class="cta-counter-content">
                                 <h2><span class="counter">25</span>+</h2>
@@ -1364,10 +1356,10 @@
                         <!-- Gallery Image Start -->
                         <div class="gallery-image wow fadeInUp">
                             <figure>
-                                <img src="images/gallery-1.jpg" alt="">
+                                <img src="{{("images/gallery-1.jpg")}}" alt="">
                             </figure>
                             <div class="gallery-btn">
-                                <a href="image-gallery.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="image-gallery.html"><img src="{{("images/arrow-white.svg")}}" alt=""></a>
                             </div>
                         </div>
                         <!-- Gallery Image End -->
@@ -1378,7 +1370,7 @@
                                 <img src="images/gallery-2.jpg" alt="">
                             </figure>
                             <div class="gallery-btn">
-                                <a href="image-gallery.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="image-gallery.html"><img src="{{("images/arrow-white.svg")}}" alt=""></a>
                             </div>
                         </div>
                         <!-- Gallery Image End -->
@@ -1386,10 +1378,10 @@
                         <!-- Gallery Image Start -->
                         <div class="gallery-image wow fadeInUp" data-wow-delay="0.4s">
                             <figure>
-                                <img src="images/gallery-3.jpg" alt="">
+                                <img src="{{("images/gallery-3.jpg")}}" alt="">
                             </figure>
                             <div class="gallery-btn">
-                                <a href="image-gallery.html"><img src="images/arrow-white.svg" alt=""></a>
+                                <a href="image-gallery.html"><img src="{{("images/arrow-white.svg")}}" alt=""></a>
                             </div>
                         </div>
                         <!-- Gallery Image End -->
