@@ -1,125 +1,84 @@
-<header>
-    <nav id="header" class="navbar navbar-expand-lg main-nav-container py-1 ">
-        {{-- {{$setting}} --}}
-        <div class="container nav-text ">
-            <a class="navbar-brand nav-logo nav-img " id="nav-logo" href="/"><img class=""
-                    src="{{ $settings['site_main_logo'] ? asset($settings['site_main_logo']) : asset('frontend/assets/image/logo.png') }}"
-                    alt="logo"></a>
-            {{-- <a class="navbar-brand nav-logo nav-img" id="nav-logo" href=""><img
-                    src="{{ asset('frontend/assets/images/logo.png') }}" alt="logo"></a> --}}
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="ri-menu-line header-menu-icon"></i></span>
-            </button>
-            <div class="collapse navbar-collapse new-nav-container" id="navbarScroll">
-                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll mh-100" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item nav-margin">
-                        <a href="{{ route('frontend.home') }}" class="nav-link  nav-text">Home</a>
-                    </li>
-                    <li class="nav-item  dropdown nav-margin">
-                        <a class="nav-link dropdown-toggle nav-text" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            About Us
-                            <i class="ri-arrow-down-s-line"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown_border nav-text">
-                            <li><a class="dropdown-item hover-effect border-css"
-                                    href="{{ route('frontend.about') }}">Our Company</a>
-                            </li>
-                            {{-- <li><a class="dropdown-item hover-effect border-css"
-                                    href="{{ route('frontend.service') }}">Service</a>
-                            </li> --}}
-                            
-                            <li><a class="dropdown-item hover-effect border-css" href="{{ route('frontend.team') }}">Our
-                                    Teams</a>
-                            </li>
-                            <li><a class="dropdown-item hover-effect border-css"
-                                    href="{{ route('frontend.messagefromfounder') }}">Message From Ceo</a>
-                            </li>
-                            
-                            {{-- <li><a class="dropdown-item hover-effect border-css"
-                                    href="{{ route('frontend.testimonial') }}">Testimonial</a>
-                            </li> --}}
+<header class="main-header">
+    <!-- Topbar Section Start -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <!-- Topbar Contact Information Start -->
+                    <div class="topbar-contact-info">
+                        <ul>
+                            <li><a href="tel:123456789"><img src="{{("frontend/images/icon-phone-accent.svg")}}" alt=""><span>Phone: </span>+(123) 465-789</a></li>
+                            <li><a href="mailto:info@domainname.com"><img src="{{("frontend/images/icon-mail-accent.svg")}}" alt=""><span>Email: </span>info@domainname.com</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item nav-margin">
-                        <a href="{{ route('frontend.service') }}" class="nav-link  nav-text">Service</a>
-                    </li>
-                    <li class="nav-item  dropdown nav-margin">
-                        <a class="nav-link dropdown-toggle nav-text" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Study Abroad
-                            <i class="ri-arrow-down-s-line"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown_border nav-text">
-                            @foreach ($footer_countries as $country)
-                                <li><a class="dropdown-item hover-effect border-css"
-                                        href="{{ route('frontend.abroadsingle', $country->slug) }}">{{ $country->title }}</a>
-                                </li>
-                            @endforeach
+                    </div>
+                    <!-- Topbar Contact Information End -->
+                </div>
+                <div class="col-md-3">
+                    <!-- Topbar Social Links Start -->
+                    <div class="topbar-social-links">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown nav-margin">
-                        <a class="nav-link dropdown-toggle nav-text" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Our Courses
-                            <i class="ri-arrow-down-s-line"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown_border nav-text">
-                            @foreach ($footer_course as $course)
-                                <li><a class="dropdown-item hover-effect border-css"
-                                        href="{{ route('frontend.coursesingle', $course->slug) }}">{{ $course->title }}</a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li>
-                    {{-- <li class="nav-item dropdown nav-margin">
-                        <a class="nav-link dropdown-toggle nav-text" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Our Services
-                            <i class="ri-arrow-down-s-line"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown_border nav-text">
-                            @foreach ($footer_services as $service)
-                                <li><a class="dropdown-item hover-effect border-css"
-                                        href="{{ route('frontend.servicesingle', $service->slug) }}">{{ $service->title }}</a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li> --}}
-                    <li class="nav-item nav-margin">
-                        <a href="{{ route('frontend.blog') }}" class="nav-link  nav-text">Blog</a>
-                    </li>
-                    {{-- <li class="nav-item nav-margin">
-                        <a href="{{ route('frontend.studentvoice') }}" class="nav-link  nav-text">Student Voice</a>
-                    </li> --}}
-                    <li class="nav-item nav-margin">
-                        <a href="{{ route('frontend.contact') }}" class="nav-link  nav-text">Contact Us</a>
-                    </li>
-                </ul>
-                <a href="{{route('frontend.register')}}" class="mb-3">
-                    <button class="btn1">Register</button>
-                </a>
+                    </div>
+                    <!-- Topbar Social Links End -->
+                </div>
             </div>
         </div>
-        </div>
-    </nav>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const header = document.querySelector("#header");
-            const navLogo = document.querySelector("#nav-logo");
-            const handleScroll = () => {
-                const scrollTop = window.scrollY;
-                if (scrollTop > 100) {
-                    header.classList.add('sticky');
-                    // navLogo.style.filter = 'invert(100%) brightness(1000%)'; 
-                } else {
-                    header.classList.remove('sticky');
-                    // navLogo.style.filter = 'invert(0%) brightness(100%)'; 
-                }
-            };
-    
-            window.addEventListener("scroll", handleScroll);
-        });
-    </script>
+    </div>
+    <!-- Topbar Section End -->
+
+    <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo Start -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="{{asset('frontend/images/logo.svg')}}" alt="Logo">
+                </a>
+                <!-- Logo End -->
+
+                <!-- Main Menu Start -->
+                <div class="collapse navbar-collapse main-menu">
+                    <div class="nav-menu-wrapper">
+                        <ul class="navbar-nav mr-auto" id="menu">
+                            <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
+                                <ul>
+                                    <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Main</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index-image.html">Home - Image</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
+                                </ul>
+                            </li>                                
+                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                <ul>                                        
+                                    <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="team-single.html">Team Details</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            <li class="nav-item highlighted-menu"><a class="nav-link" href="reserve-table.html">Reserve A Table</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Header Btn Start -->
+                    <div class="header-btn">
+                        <a href="reserve-table.html" class="btn-default">Reserve A Table</a>
+                    </div>
+                    <!-- Header Btn End -->                      
+                </div>
+                <!-- Main Menu End -->
+                <div class="navbar-toggle"></div>
+            </div>
+        </nav>
+        <div class="responsive-menu"></div>
+    </div>
 </header>

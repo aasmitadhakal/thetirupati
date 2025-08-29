@@ -18,39 +18,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
-    <!-- bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}" type="text/css">
-    <!-- carousel CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/owl.carousel.min.css') }}" type="text/css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/animate.css') }}" type="text/css">
-    <!-- animated-text CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/animated-text.css') }}" type="text/css">
-    <!-- font-awesome CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/all.min.css') }}" type="text/css">
-    <!-- theme-default CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/theme-default.css') }}" type="text/css">
-    <!-- meanmenu CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/meanmenu.min.css') }}" type="text/css">
-    <!-- transitions CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/owl.transitions.css') }}" type="text/css">
-    <!-- venobox CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/venobox/venobox.css') }}" type="text/css">
-    <!-- flaticon -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap-icons.css') }}" type="text/css">
-    <!-- bootstrap icons -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/flaticon.css') }}" type="text/css">
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style2.css') }}" type="text/css">
-    <!-- responsive CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/responsive.css') }}" type="text/css">
-    <!-- Coustom Animation CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/coustom-animation.css') }}" type="text/css"
-        media="all">
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/scroll-up.css') }}" type="text/css">
-    <!-- modernizr js -->
-    <script src="{{ asset('frontend/assets/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('frontend/css/all.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/animate.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/mousecursor.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/slicknav.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/swiper-budle.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/swiper-bundle.min.css') }}" type="text/css">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -74,13 +52,6 @@
             </div>
         </div>
     @endif
-    <!-- loader -->
-    {{-- <div class="loader-wrapper">
-        <div class="loader"></div>
-        <div class="loder-section left-section"></div>
-        <div class="loder-section right-section"></div>
-    </div> --}}
-
     @include('layouts.frontend.header')
 
     @yield('content')
@@ -88,8 +59,7 @@
     @include('layouts.frontend.footer')
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="{{ asset('frontend/assets/js/bootstrap.bundle.min.js') }}"></script>
+   
 
     {{-- Bootstrap Toast Notification --}}
 
@@ -139,6 +109,27 @@
         });
     </script>
     {{-- for swiper --}}
+    <script src="{{asset('frontend/js/bootstrap.min.css')}}"></script>
+    <script src="{{asset('frontend/js/function.js')}}"></script>
+    <script src="{{asset('frontend/js/gsap.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery-3.7.1.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.counterup.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.mb.YTPlayer.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.slicknav.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.waypoints.min.js')}}"></script>
+    <script src="{{asset('frontend/js/magiccursor.js')}}"></script>
+    <script src="{{asset('frontend/js/parallaxie.js')}}"></script>
+
+    <script src="{{asset('frontend/js/ScrollTrigger.min.js')}}"></script>
+    <script src="{{asset('frontend/js/SmoothScoll.js')}}"></script>
+    <script src="{{asset('frontend/js/SplitText.js')}}"></script>
+    <script src="{{asset('frontend/js/swiper-bundle.min.js')}}"></script>
+    <script src="{{asset('frontend/js/validator.min.js')}}"></script>
+    <script src="{{asset('frontend/js/wow.min.js')}}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="{{ asset('frontend/assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
